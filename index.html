@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>URL & IP 在线处理工具</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div id="container">
+		<h2>URL & IP 在线处理工具</h2>
+		<h5>0xShe 网络安全导航 sbbbb.cn</h5>
+		<textarea id="ip-list" ></textarea>
+		<br>
+		<button onclick="removeDuplicates()">去重</button>
+		<button onclick="clearTextArea()">清除</button>
+		<button onclick="removePorts()">去除端口号</button>
+		<button onclick="removeProtocols()">去除协议</button>
+		<button onclick="addCIDR('/24')">批量加上c段</button>
+		<button onclick="addCIDR('/16')">批量加上b段</button>
+		<button onclick="extractDomains()">提取域名</button>
+		<button onclick="extractIPs()">提取IP</button>
+		
+	</div>
+</body>
+</html>
